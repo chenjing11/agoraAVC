@@ -19,7 +19,7 @@ class TestAndroid:
         self.avc = Android_AVC()
         self.channel_name = "AVCAUTO"
         self.password = "avctest"
-        self.packageName = "io.agora.videocall"
+        self.packageName = "io.agora.vcall"
 
     def tearDown(self):
         pass
