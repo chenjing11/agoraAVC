@@ -17,7 +17,7 @@ class Android_AVC():
 
     def startAVC(self,packageName):
         start_app(packageName)
-        wait(Template(r"tpl1568208771836.png", record_pos=(-0.002, -0.009), resolution=(1080, 1920)))
+        wait(Template(r"resource/images/tpl1568208771836.png", record_pos=(-0.002, -0.009), resolution=(1080, 1920)))
         sleep(self.interval)
 
     def inputChannelName(self,channelname):
