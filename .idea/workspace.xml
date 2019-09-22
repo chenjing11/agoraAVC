@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43de1be6-132e-470a-8a7a-c21768d95da5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avc_fulltest/test_functionality.py" beforeDir="false" afterPath="$PROJECT_DIR$/avc_fulltest/test_functionality.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/maincase.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/maincase.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +21,8 @@
       <file leaf-file-name="maincase.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/maincase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="86">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding>
                 <element signature="e#22#52#0" expanded="true" />
               </folding>
@@ -32,8 +33,8 @@
       <file leaf-file-name="test_functionality.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/avc_fulltest/test_functionality.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="148">
+              <caret line="33" column="17" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -235,6 +236,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="835" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.4797203" />
@@ -242,7 +244,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.48915988" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.5762238" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.53426576" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -291,6 +293,13 @@
     <entry file="file://$PROJECT_DIR$/config/config.py" />
     <entry file="file://$PROJECT_DIR$/fulltest/test_functionality.py" />
     <entry file="file://$PROJECT_DIR$/maincase/android_main.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/airtest/core/android/adb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="181" column="25" selection-start-line="181" selection-start-column="15" selection-end-line="181" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/case_tag.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -300,22 +309,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/avc_fulltest/test_functionality.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/airtest/core/android/adb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="181" column="25" selection-start-line="181" selection-start-column="15" selection-end-line="181" selection-end-column="25" />
+        <state relative-caret-position="148">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/maincase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="86">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding>
             <element signature="e#22#52#0" expanded="true" />
           </folding>

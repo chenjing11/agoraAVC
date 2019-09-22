@@ -6,12 +6,14 @@ import airtest.core.android.android
 from PIL import Image
 import cv2
 import pytest
+import time
 from common import case_tag
 from common.maincase import Android_AVC
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd=r'/usr/local/Cellar/tesseract/4.0.0.1/bin/tesseract'
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 poco=AndroidUiautomationPoco()
+poco.device.wake()
 
 class TestAndroid:
 

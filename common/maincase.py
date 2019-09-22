@@ -17,11 +17,11 @@ class Android_AVC():
 
     def startAVC(self,packageName):
         start_app(packageName)
-        wait(Template(r"resource/images/tpl1568208771836.png", record_pos=(-0.002, -0.009), resolution=(1080, 1920)))
+        # wait(Template(r"resource/images/tpl1568208771836.png", record_pos=(-0.002, -0.009), resolution=(1080, 1920)))
         sleep(self.interval)
 
     def inputChannelName(self,channelname):
-        poco("io.agora.vcall:id/edit_name").click()
+        poco("android.widget.FrameLayout").child("android:id/decor_content_parent").offspring("io.agora.vcall:id/edit_name")[3].click()
         text(channelname)
 
     def inputPassword(self,password):
