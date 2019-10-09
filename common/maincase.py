@@ -21,7 +21,7 @@ class Android_AVC():
         sleep(self.interval)
 
     def inputChannelName(self,channelname):
-        poco("android.widget.FrameLayout").child("android:id/decor_content_parent").offspring("io.agora.vcall:id/edit_name")[3].click()
+        poco("io.agora.vcall:id/edit_name").click()
         text(channelname)
 
     def inputPassword(self,password):
@@ -30,4 +30,16 @@ class Android_AVC():
 
     def joinChannel(self):
         poco("io.agora.vcall:id/btn_join").click()
+
+    def nick_comfirm(self,nickname):
+        poco("io.agora.vcall:id/me").click()
+        poco("io.agora.vcall:id/nickname").click()
+        poco("io.agora.vcall:id/nickEditText").click()
+        text(nickname)
+        poco("io.agora.vcall:id/nickConfirm").click()
+
+    def getWordsInImage(self,image_path):
+        image = Image.open(image_path)
+        text = pytesseract.image_to_string(image,lang='chi_sim')
+        return text
 

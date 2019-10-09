@@ -1,19 +1,12 @@
 #-*- coding:utf-8 -*-
 from airtest.core.api import *
-init_device("Android")
-connect_device("Android:///")
-import airtest.core.android.android
-from PIL import Image
-import cv2
 import pytest
-import time
 from common import case_tag
 from common.maincase import Android_AVC
-import pytesseract
-pytesseract.pytesseract.tesseract_cmd=r'/usr/local/Cellar/tesseract/4.0.0.1/bin/tesseract'
-from poco.drivers.android.uiautomation import AndroidUiautomationPoco
-poco=AndroidUiautomationPoco()
-poco.device.wake()
+# import pytesseract
+# pytesseract.pytesseract.tesseract_cmd=r'/usr/local/Cellar/tesseract/4.0.0.1/bin/tesseract'
+# from poco.drivers.android.uiautomation import AndroidUiautomationPoco
+# poco=AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 
 class TestAndroid:
 
@@ -22,15 +15,27 @@ class TestAndroid:
         self.channel_name = "AVCAUTO"
         self.password = "avctest"
         self.packageName = "io.agora.vcall"
+        self.nickname = "jkjl"
 
     def tearDown(self):
         pass
 
+
+    # 设置界面，昵称不超过18
+    @pytest.mark.parametrize("nickname", ["1234567899876543210"])
     @pytest.mark.tags(case_tag.ANDROID, case_tag.MEDIUM, case_tag.AUTOMATED, case_tag.FUNCTIONALITY)
-    def test_joinChannel(self):
+    def test_joinChannel(self,nickname):
         avc = self.avc
         avc.setCurrentDevice(0)
         avc.startAVC(self.packageName)
-        avc.inputChannelName(self.channel_name)
-        avc.inputPassword(self.password)
-        avc.joinChannel()
+        # avc.nick_comfirm(nickname)
+        # sleep(5)
+        image_path = "resource/images/1.png"
+        snapshot(image_path)
+        sleep(5)
+        text = avc.getWordsInImage(image_path)
+        print(text)
+
+
+        # poco("io.agora.vcall:id/me_back").click()
+
