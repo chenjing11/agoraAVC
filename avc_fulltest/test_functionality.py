@@ -16,6 +16,7 @@ class TestAndroid:
         self.password = "avctest"
         self.packageName = "io.agora.vcall"
         self.nickname = "jkjl"
+        self.screeshot_path = "resource/screenshot/"
 
     def tearDown(self):
         pass
@@ -30,10 +31,11 @@ class TestAndroid:
         avc.startAVC(self.packageName)
         # avc.nick_comfirm(nickname)
         # sleep(5)
-        image_path = "resource/images/1.png"
-        snapshot(image_path)
+        path1 = self.screeshot_path+"getNickname.png"
+        snapshot(path1)
         sleep(5)
-        text = avc.getWordsInImage(image_path)
+        width,height = avc.getImageSize(path1)
+
         print(text)
 
 

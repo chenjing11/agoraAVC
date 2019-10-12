@@ -1,5 +1,7 @@
 #-*- coding:utf-8 -*-
 from airtest.core.api import *
+from airtest import aircv
+from airtest.core.cv import Predictor
 from PIL import Image
 import cv2
 import pytesseract
@@ -42,4 +44,12 @@ class Android_AVC():
         image = Image.open(image_path)
         text = pytesseract.image_to_string(image,lang='chi_sim')
         return text
+
+    def getImageSize(self,path):
+        width,height = poco.get_screen_size()
+        return width,height
+
+
+
+
 
