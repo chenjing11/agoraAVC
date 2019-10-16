@@ -34,20 +34,36 @@ class Android_AVC():
         poco("io.agora.vcall:id/btn_join").click()
 
     def nick_comfirm(self,nickname):
-        poco("io.agora.vcall:id/me").click()
-        poco("io.agora.vcall:id/nickname").click()
-        poco("io.agora.vcall:id/nickEditText").click()
+        poco("io.agora.vcall:id/btSettings").click()
+        poco("io.agora.vcall:id/editNickName").click()
         text(nickname)
-        poco("io.agora.vcall:id/nickConfirm").click()
+
 
     def getWordsInImage(self,image_path):
         image = Image.open(image_path)
         text = pytesseract.image_to_string(image,lang='chi_sim')
         return text
 
-    def getImageSize(self,path):
-        width,height = poco.get_screen_size()
-        return width,height
+    def getImageSize(self, img_path):
+        img = Image.open(img_path)
+        width = img.size[0]
+        height = img.size[1]
+        print("width:%s,height:%s" % (width, height))
+        return width, height
+
+    def getCustomizeImage(self, origin_image_path, new_image_path, left, upper, right, lower):
+        """
+        :param origin_image_path: 原始图片的路径
+        :param new_image_path: 图片裁剪后的路径
+        :param left: 左 坐标
+        :param upper: 上 坐标
+        :param right: 右 坐标
+        :param lower: 下 坐标
+        :return:
+        """
+        img = Image.open(origin_image_path)
+        cropped = img.crop((left, upper, right, lower))
+        cropped.save(new_image_path)
 
 
 
