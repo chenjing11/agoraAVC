@@ -23,11 +23,13 @@ class Android_AVC():
         sleep(self.interval)
 
     def inputChannelName(self,channelname):
-        poco("io.agora.vcall:id/edit_name").click()
+        poco("io.agora.vcall:id/editRoomName").click()
+        poco("io.agora.vcall:id/editRoomName").long_click()
         text(channelname)
 
     def inputPassword(self,password):
-        poco("io.agora.vcall:id/edit_password").click()
+        poco("io.agora.vcall:id/editRoomPwd").click()
+        poco("io.agora.vcall:id/editRoomPwd").long_click()
         text(password)
 
     def joinChannel(self):
@@ -36,6 +38,7 @@ class Android_AVC():
     def nick_comfirm(self,nickname):
         poco("io.agora.vcall:id/btSettings").click()
         poco("io.agora.vcall:id/editNickName").click()
+        poco("io.agora.vcall:id/editNickName").long_click()
         text(nickname)
 
 
@@ -64,6 +67,10 @@ class Android_AVC():
         img = Image.open(origin_image_path)
         cropped = img.crop((left, upper, right, lower))
         cropped.save(new_image_path)
+
+    def nickBackHome(self):
+        poco("io.agora.vcall:id/btBack").click()
+        sleep(self.interval)
 
 
 

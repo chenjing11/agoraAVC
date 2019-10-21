@@ -23,24 +23,72 @@ class TestAndroid:
 
 
     # 设置界面，昵称不超过18
-    @pytest.mark.parametrize("nickname", ["1234567899876543210"])
+    @pytest.mark.parametrize("nickname", ["1234567899876543210","732djshgdshGHCT*&()__dh","eh@#@$?><jkhsfGVDderw"])
     @pytest.mark.tags(case_tag.ANDROID, case_tag.MEDIUM, case_tag.AUTOMATED, case_tag.FUNCTIONALITY)
-    def test_joinChannel(self,nickname):
+    def test_editNick(self,nickname):
         avc = self.avc
         avc.setCurrentDevice(0)
         avc.startAVC(self.packageName)
+        sleep(1)
         avc.nick_comfirm(nickname)
-        # sleep(5)
+        sleep(5)
         path1 = self.screeshot_path+"getNickname1.png"
         path2 = self.screeshot_path+"getNickname2.png"
         snapshot(path1)
-        sleep(5)
         width,height = avc.getImageSize(path1)
-        avc.getCustomizeImage(path1, path2, 0, 1/5 * height, width, 2/5*height)
+        avc.getCustomizeImage(path1, path2, 0, 4/9 * height, width, 1/2*height)
         text = avc.getWordsInImage(path2)
         print(text)
-        # stop_app(self.packageName)
+        assert len(text) <=18
+
+        # 返回AVC首页
+        avc.nickBackHome()
 
 
-        # poco("io.agora.vcall:id/me_back").click()
+    # 频道名不能超过18
+    @pytest.mark.parametrize("channelname", ["1234567899876543210","eheygfFSFGCFTS378426"])
+    @pytest.mark.tags(case_tag.ANDROID, case_tag.MEDIUM, case_tag.AUTOMATED, case_tag.FUNCTIONALITY)
+    def test_joinchannel_1(self, channelname):
+        avc = self.avc
+        avc.setCurrentDevice(0)
+        avc.startAVC(self.packageName)
+        avc.inputChannelName(channelname)
+        sleep(3)
+        avc.inputPassword(self.password)
+        sleep(1)
+        path1 = self.screeshot_path + "getNickname1.png"
+        path2 = self.screeshot_path + "getNickname2.png"
+        snapshot(path1)
+        width, height = avc.getImageSize(path1)
+        avc.getCustomizeImage(path1, path2, 0, 8/ 15 * height, width, 3 / 5 * height)
+        text = avc.getWordsInImage(path2)
+        print(text)
+        assert len(text) <=18
+
+
+    # 频道名自动大写
+    @pytest.mark.parametrize("channelname", ["sdagh"])
+    @pytest.mark.tags(case_tag.ANDROID, case_tag.MEDIUM, case_tag.AUTOMATED, case_tag.FUNCTIONALITY)
+    def test_joinchannel_2(self, channelname):
+        avc = self.avc
+        avc.setCurrentDevice(0)
+        avc.startAVC(self.packageName)
+        avc.startAVC(self.packageName)
+        avc.inputChannelName(channelname)
+        sleep(3)
+        avc.inputPassword(self.password)
+        sleep(1)
+        path1 = self.screeshot_path + "getNickname1.png"
+        path2 = self.screeshot_path + "getNickname2.png"
+        snapshot(path1)
+        width, height = avc.getImageSize(path1)
+        avc.getCustomizeImage(path1, path2, 0, 8/ 15 * height, width, 3 / 5 * height)
+        text = avc.getWordsInImage(path2)
+        print(text)
+        assert text =="SDAGH"
+
+        stop_app(self.packageName)
+
+
+
 

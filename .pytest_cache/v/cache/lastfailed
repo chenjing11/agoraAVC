@@ -1,3 +1,14 @@
 {
-  "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinChannel": true
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[$%#$ejfkhfjghbgder09349344rhj]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[1234567899876543210]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[26372tdgvfvhdFSFTdVDGHXNKJ]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[DGDfeiur@#$%fkhff&**vnjfhgjf]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[\\u54c8\\u54c8\\u54c8]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[\\u97f3\\u89c6\\u9891\\u4f1a\\u8bae\\u901a\\u7528\\u8f6f\\u4ef6\\u9002\\u5408\\u5404\\u79cd\\u573a\\u666f\\u7684\\u97f3\\u89c6\\u9891\\u7ae5\\u8bdd\\u64cd\\u4f5c\\u7b80\\u5355]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[eh@#@$%?><jkhsfGVDderw]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[eh@#@$?><jkhsfGVDderw]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[hfdsjgfwgeryegertriyrgnfjdhfer]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[hfhf84378643]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinChannel": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinchannel_2[sdagh]": true
 }

@@ -1,3 +1,8 @@
 [
-  "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinChannel[1234567899876543210]"
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[1234567899876543210]",
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[732djshgdshGHCT*&()__dh]",
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[eh@#@$?><jkhsfGVDderw]",
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinchannel_1[1234567899876543210]",
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinchannel_1[eheygfFSFGCFTS378426]",
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinchannel_2[sdagh]"
 ]
