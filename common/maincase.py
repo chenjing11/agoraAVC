@@ -24,22 +24,26 @@ class Android_AVC():
 
     def inputChannelName(self,channelname):
         poco("io.agora.vcall:id/editRoomName").click()
-        poco("io.agora.vcall:id/editRoomName").long_click()
+        poco("io.agora.vcall:id/editRoomName").set_text("")
         text(channelname)
+        sleep(self.interval)
 
     def inputPassword(self,password):
         poco("io.agora.vcall:id/editRoomPwd").click()
-        poco("io.agora.vcall:id/editRoomPwd").long_click()
+        poco("io.agora.vcall:id/editRoomPwd").set_text("")
         text(password)
+        sleep(self.interval)
 
     def joinChannel(self):
-        poco("io.agora.vcall:id/btn_join").click()
+        poco("io.agora.vcall:id/btJoin").click()
+        sleep(self.interval)
 
     def nick_comfirm(self,nickname):
         poco("io.agora.vcall:id/btSettings").click()
         poco("io.agora.vcall:id/editNickName").click()
-        poco("io.agora.vcall:id/editNickName").long_click()
+        poco("io.agora.vcall:id/editNickName").set_text("")
         text(nickname)
+        sleep(self.interval)
 
 
     def getWordsInImage(self,image_path):
@@ -69,22 +73,28 @@ class Android_AVC():
         cropped.save(new_image_path)
 
     def nickBackHome(self):
-        poco("io.agora.vcall:id/btBack").click()
+        keyevent("BACK")
         sleep(self.interval)
 
 
     def clearRoomName(self):
         poco("io.agora.vcall:id/editRoomName").click()
         poco("io.agora.vcall:id/editRoomName").set_text("")
+        sleep(self.interval)
 
     def clearRoomPwd(self):
         poco("io.agora.vcall:id/editRoomPwd").click()
         poco("io.agora.vcall:id/editRoomPwd").set_text("")
+        sleep(self.interval)
 
 
     def clearNickName(self):
         poco("io.agora.vcall:id/editNickName").click()
         poco("io.agora.vcall:id/editNickName").set_text("")
+        sleep(self.interval)
+
+
+
 
 
 
