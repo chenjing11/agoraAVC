@@ -73,6 +73,20 @@ class Android_AVC():
         sleep(self.interval)
 
 
+    def clearRoomName(self):
+        poco("io.agora.vcall:id/editRoomName").click()
+        poco("io.agora.vcall:id/editRoomName").set_text("")
+
+    def clearRoomPwd(self):
+        poco("io.agora.vcall:id/editRoomPwd").click()
+        poco("io.agora.vcall:id/editRoomPwd").set_text("")
+
+
+    def clearNickName(self):
+        poco("io.agora.vcall:id/editNickName").click()
+        poco("io.agora.vcall:id/editNickName").set_text("")
+
+
 
 
 

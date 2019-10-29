@@ -87,7 +87,6 @@ class TestAndroid:
         print(text)
         assert text =="SDAGH"
 
-        stop_app(self.packageName)
 
 
 
