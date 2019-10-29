@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="43de1be6-132e-470a-8a7a-c21768d95da5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/avc_fulltest/test_functionality.py" beforeDir="false" afterPath="$PROJECT_DIR$/avc_fulltest/test_functionality.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/maincase.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/maincase.py" afterDir="false" />
     </list>
@@ -18,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="maincase.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maincase.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/maincase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="241">
+              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
               <folding>
                 <element signature="e#22#52#0" expanded="true" />
               </folding>
@@ -48,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_functionality.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_functionality.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/avc_fulltest/test_functionality.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
+            <state relative-caret-position="124">
+              <caret line="173" column="74" selection-start-line="173" selection-start-column="74" selection-end-line="173" selection-end-column="74" />
               <folding>
                 <element signature="e#22#52#0" expanded="true" />
               </folding>
@@ -106,8 +108,8 @@
         <option value="$PROJECT_DIR$/maincase/maincase.py" />
         <option value="$PROJECT_DIR$/avc_android_fulltest/test_functionality.py" />
         <option value="$PROJECT_DIR$/common/case_tag.py" />
-        <option value="$PROJECT_DIR$/avc_fulltest/test_functionality.py" />
         <option value="$PROJECT_DIR$/common/maincase.py" />
+        <option value="$PROJECT_DIR$/avc_fulltest/test_functionality.py" />
       </list>
     </option>
   </component>
@@ -265,7 +267,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="830" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.4797203" />
@@ -565,23 +566,23 @@
     <entry file="file://$PROJECT_DIR$/resource/images/getNickname1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/images/getNickname2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/avc_fulltest/test_functionality.py">
+    <entry file="file://$PROJECT_DIR$/common/maincase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
+        <state relative-caret-position="241">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
           <folding>
             <element signature="e#22#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/maincase.py">
+    <entry file="file://$PROJECT_DIR$/resource/images/getNickname2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avc_fulltest/test_functionality.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="124">
+          <caret line="173" column="74" selection-start-line="173" selection-start-column="74" selection-end-line="173" selection-end-column="74" />
           <folding>
             <element signature="e#22#52#0" expanded="true" />
           </folding>

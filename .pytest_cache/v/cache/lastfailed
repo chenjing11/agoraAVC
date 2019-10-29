@@ -10,5 +10,6 @@
   "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[hfdsjgfwgeryegertriyrgnfjdhfer]": true,
   "avc_fulltest/test_functionality.py::TestAndroid::()::test_editNick[hfhf84378643]": true,
   "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinChannel": true,
-  "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinchannel_2[sdagh]": true
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_joinchannel_2[sdagh]": true,
+  "avc_fulltest/test_functionality.py::TestAndroid::()::test_namelength_less_3": true
 }

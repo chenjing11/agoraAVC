@@ -38,11 +38,24 @@ class Android_AVC():
         poco("io.agora.vcall:id/btJoin").click()
         sleep(self.interval)
 
+
+    def leaveChannel(self):
+        poco("io.agora.vcall:id/hangUp").click()
+        sleep(self.interval)
+
+    def checkversion(self):
+        poco("io.agora.vcall:id/version").click()
+        sleep(self.interval)
+
     def nick_comfirm(self,nickname):
         poco("io.agora.vcall:id/btSettings").click()
         poco("io.agora.vcall:id/editNickName").click()
         poco("io.agora.vcall:id/editNickName").set_text("")
         text(nickname)
+        sleep(self.interval)
+
+    def nick_back(self):
+        poco("io.agora.vcall:id/btBack").click()
         sleep(self.interval)
 
 
@@ -72,7 +85,7 @@ class Android_AVC():
         cropped = img.crop((left, upper, right, lower))
         cropped.save(new_image_path)
 
-    def nickBackHome(self):
+    def key_back(self):
         keyevent("BACK")
         sleep(self.interval)
 
