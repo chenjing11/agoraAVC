@@ -149,7 +149,7 @@ class TestAndroid:
         avc.setCurrentDevice(0)
         avc.startAVC(self.packageName)
         avc.nick_comfirm(self.nickname)
-        avc.nick_back()
+        avc.settings_back()
         avc.inputChannelName(self.channel_name)
         avc.joinChannel()
         avc.leaveChannel()
@@ -163,7 +163,7 @@ class TestAndroid:
         avc.setCurrentDevice(0)
         avc.startAVC(self.packageName)
         avc.nick_comfirm(self.nickname)
-        avc.nick_back()
+        avc.settings_back()
         avc.inputChannelName(self.channel_name)
         avc.joinChannel()
         path1 = self.screeshot_path + "getNickname1.png"
@@ -209,7 +209,7 @@ class TestAndroid:
         avc.setCurrentDevice(0)
         avc.startAVC(self.packageName)
         avc.nick_comfirm(self.nickname)
-        avc.nick_back()
+        avc.settings_back()
         avc.inputChannelName(self.channel_name)
         avc.inputPassword(self.password)
         path1 = self.screeshot_path + "getNickname1.png"
@@ -221,6 +221,30 @@ class TestAndroid:
         print(text)
         assert text =="123456789123456789"
         avc.joinChannel()
+        avc.leaveChannel()
+
+
+
+    #房间名有效，密码有效，mute本地视频加入房间
+    @pytest.mark.tags(case_tag.ANDROID, case_tag.MEDIUM, case_tag.AUTOMATED, case_tag.FUNCTIONALITY)
+    def test_mutelocalvideo_joinchanel(self):
+        avc = self.avc
+        avc.setCurrentDevice(0)
+        avc.startAVC(self.packageName)
+        avc.nick_comfirm(self.nickname)
+        avc.mutelocalvideo_channelout()
+        avc.settings_back()
+        avc.inputChannelName(self.channel_name)
+        avc.inputPassword(self.password)
+        avc.joinChannel()
+        path1 = self.screeshot_path + "getNickname1.png"
+        path2 = self.screeshot_path + "getNickname2.png"
+        snapshot(path1)
+        width, height = avc.getImageSize(path1)
+        avc.getCustomizeImage(path1, path2, 0, 29/50 * height, width, 31/50 * height)
+        text = avc.getWordsInImage(path2)
+        print(text)
+        assert text =="123456789123456789"
         avc.leaveChannel()
 
 

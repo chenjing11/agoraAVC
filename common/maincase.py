@@ -54,8 +54,15 @@ class Android_AVC():
         text(nickname)
         sleep(self.interval)
 
-    def nick_back(self):
+    def settings_back(self):
         poco("io.agora.vcall:id/btBack").click()
+        sleep(self.interval)
+
+
+    def mutelocalvideo_channelout(self):
+        poco("io.agora.vcall:id/btSettings").click()
+        poco("android.widget.LinearLayout").offspring("android:id/content").offspring(
+            "io.agora.vcall:id/itemCamera").offspring("io.agora.vcall:id/btSwitch").click()
         sleep(self.interval)
 
 
