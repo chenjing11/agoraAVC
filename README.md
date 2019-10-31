@@ -13,4 +13,4 @@ pip install pocoui
 
 pip install PIL
 
-brew install tesseract（并在脚本声明tesseract所在的路径，e.g:pytesseract.pytesseract.tesseract_cmd=r'/usr/local/Cellar/tesseract/4.1.0/bin/tesseract'）
+brew install tesseract（并在脚本声明tesseract所在的路径，e.g:pytesseract.pytesseract.tesseract_cmd=r'/usr/local/Cellar/tesseract/4.0.0_1/bin/tesseract'
